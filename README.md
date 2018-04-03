@@ -1,1 +1,5 @@
-# All technical, design and general documentation for the Ælf project #
+# All technical, design and general documentation for the Ã†lf project #
+
+[Work in progress]
+
+[Technical documentation main page](https://github.com/AElfProject/AElfDocs/blob/master/Technical/main-page.md)
