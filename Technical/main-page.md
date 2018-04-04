@@ -75,11 +75,11 @@ This section describes the components implemented in the kernel. It clarifies th
 
 
   ```
-  +-----+----+      +-----+----+      +-----+----+
-  |          |      |          |      |          |
-  | Serrvice | ---> |  Manager | ---> |  Storage |
-  |          |      |          |      |          |
-  +-----+----+      +-----+----+      +-----+----+
+  +-------------+  +-------------+  +------------+     
+  |             |  |             |  |            |     
+  |  Service  +----->  Manager  +-----> Storage  |
+  |             |  |             |  |            |
+  +-------------+  +-------------+  +------------+
   ```
 
 
