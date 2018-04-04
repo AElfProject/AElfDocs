@@ -19,9 +19,9 @@ This section describes the components implemented in the kernel. It clarifies th
   A `Smart Contract` can be seen as a protocol. It’s implemented as a service (micro-service). 
   For example, this means that since the Consensus Protocol is defined as a `Smart Contract`, it is in fact a service. 
   When a chain is created, it needs genesis block with a collection of Smart Contracts deployed. This collection, named as
-  **Genesis Smart Contract Collection**, can be changed in the future by vote.The contract code will be encapsulated in 
-  `SmartContractRegistration` and registered into `AccountZero`. `Smartcontrac`t object only can be cached in memory 
-  by  `SmartContractZero` from `SmartContractRegistration`.
+  **Genesis Smart Contract Collection**, can be changed in the future by vote. The contract code will be encapsulated in 
+  `SmartContractRegistration` and registered into `AccountZero`. `Smartcontract` objects should be cached in memory 
+  by  `SmartContractZero` using `SmartContractRegistration`.
 
 ### **World State**
 
