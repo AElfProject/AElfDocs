@@ -58,15 +58,17 @@ This section describes the components implemented in the kernel. It clarifies th
 - `WorldStateManager` provides entry for `WoldStatestore` and functionality to obtain `AccountDataProvider` objects associated with given `Account`
 
 ### **Storage**
+| Command | Description |
+| --- | --- |
+| `BlockStore` | Insert and get blocks |
+| `ChainStore` | Insert, update and get chains |
+| `ChangesStore` | Insert and get a change of path-pointer |
+| `PointerStore` | Insert and get pointers (by path) |
+| `TransactionStore` | Insert and get transactions |
+| `WorldStateStore` | Set and get world states of each block |
+| `ChainBlockRelationStore` | Insert and get chain-block relations by their hashes |
 
-- `BlockStore`
-- `ChainBlockRelationStore`
-- `ChainStore`
-- `ChangesStore`
-- `PointerStore`
-- `SmartContractRegistrationStore`
-- `TransactionStore`
-- `WorldStateStore`
+ 
 
 ### **Relation among Service, Manager, Storage**
 - **Service** is processing logic associated with chain state
