@@ -2,4 +2,4 @@
 
 [Work in progress]
 
-[Technical documentation](https://github.com/AElfProject/AElfDocs/blob/master/Technical/main-page.md)
+[Technical documentation](Technical/main-page.md)
