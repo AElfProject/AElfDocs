@@ -17,13 +17,12 @@ This section describes the components implemented in the kernel. It clarifies th
 
 ### **Smart Contracts**
 
-    
   A `Smart Contract` can be seen as a protocol. It’s implemented as a service (micro-service). 
-  For example, this means that since the Consensus Protocol is defined as a `Smart Contract`, it is in fact a service. 
+  For example, this means that since the **Consensus Protocol** is defined as a `Smart Contract`, it is in fact a service. 
   When a chain is created, it needs genesis block with a collection of Smart Contracts deployed. This collection, named as
   **Genesis Smart Contract Collection**, can be changed in the future by vote. The contract code will be encapsulated in 
-  `SmartContractRegistration` and registered into `AccountZero`. `Smartcontract` objects should be cached in memory 
-  by  `SmartContractZero` using `SmartContractRegistration`.
+  `SmartContractRegistration` and registered into `AccountZero`. `Smartcontract` objects should be cached in memory. 
+  `SmartContractZero` provides entries for `Smartcontract` using `SmartContractRegistration`.
 
 ### **World State**
 
@@ -60,13 +59,13 @@ This section describes the components implemented in the kernel. It clarifies th
 ### **Storage**
 | Command | Description |
 | --- | --- |
-| `BlockStore` | Insert and get blocks |
-| `ChainStore` | Insert, update and get chains |
-| `ChangesStore` | Insert and get a change of path-pointer |
-| `PointerStore` | Insert and get pointers (by path) |
-| `TransactionStore` | Insert and get transactions |
-| `WorldStateStore` | Set and get world states of each block |
-| `ChainBlockRelationStore` | Insert and get chain-block relations by their hashes |
+| `BlockStore` | Insert and get `BLock` |
+| `ChainStore` | Insert, update and get `Chain` |
+| `ChangesStore` | Insert and get a change of `path-pointer` |
+| `PointerStore` | Insert and get `pointer` (by path) |
+| `TransactionStore` | Insert and get `Transaction` |
+| `WorldStateStore` | Set and get `World State` of each `Block` |
+| `ChainBlockRelationStore` | Insert and get `chain-block` relations by `Hash` |
 
  
 
