@@ -75,18 +75,18 @@ This section describes the components implemented in the kernel. It clarifies th
 
 
   ```
-  +-----+----+    +----+----+    +-------+
-  |          | - |          |--> |       |
-  | Serrvice |   |  Manager |    |
-  |          |   |          |    |       |
-  +----------+    +----+----+    +-------+
-      :                         ^
-      |       Lots of work      |
-      +-------------------------+
+  +-----+----+      +-----+----+      +-----+----+
+  |          |      |          |      |          |
+  | Serrvice | ---> |  Manager | ---> |  Storage |
+  |          |      |          |      |          |
+  +-----+----+      +-----+----+      +-----+----+
   ```
 
 
 
 ## AElf topology 
 
-![Two clusters running AElf](figures/aelf-cluster-diagram.png)
+<p align="center">
+  <img src="figures/aelf-cluster-diagram.png" width="500">
+</p>
+
