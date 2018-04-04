@@ -42,24 +42,24 @@ This section describes the components implemented in the kernel. It clarifies th
 
 ### **Manager**
 
-- **_BlockManager_** provides entries(get/set) for **_BlockStore_**
-- **_ChainManager_** provides functionality of appending the given Block to specified Chain and entries for **_ChainBlockRelationStrore_**
-- **_ChainManager_** provides entries(get/set）for **_ChainStore_**
-- **_SmartContractManager_** provides entries(get/set）for **_SmartContractRegistration_** storage
-- **_TransactionManager_** provides entries for **_TransactionSotre_**
-- **_TransactionExecutingManager_** contains scheduling algorithm and provides functionality of **_Transaction_** executing
-- **_WorldStateManager_** provides entry for **_WoldStatestore_** and functionality to obtain **_AccountDataProvider_** objects associated with given **_Account_**
+- `BlockManager` provides entries(get/set) for `BlockStore`
+- `ChainManager` provides functionality of appending the given Block to specified Chain and entries for `ChainBlockRelationStrore`
+- `ChainManager` provides entries(get/set）for `ChainStore`
+- `SmartContractManager` provides entries(get/set）for `SmartContractRegistration` storage
+- `TransactionManager` provides entries for `TransactionSotre`
+- `TransactionExecutingManager` contains scheduling algorithm and provides functionality of `Transaction` executing
+- `WorldStateManager` provides entry for `WoldStatestore` and functionality to obtain `AccountDataProvider` objects associated with given `Account`
 
 ### **Storage**
 
-- **_BlockStore_**
-- **_ChainBlockRelationStore_**
-- **_ChainStore_**
-- **_ChangesStore_**
-- **_PointerStore_**
-- **_SmartContractRegistrationStore_**
-- **_TransactionStore_**
-- **_WorldStateStore_**
+- `BlockStore`
+- `ChainBlockRelationStore`
+- `ChainStore`
+- `ChangesStore`
+- `PointerStore`
+- `SmartContractRegistrationStore`
+- `TransactionStore`
+- `WorldStateStore`
 
 ### **Relation among Service, Manager, Storage**
 - Service is processing logic associated with chain state
