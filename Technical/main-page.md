@@ -6,7 +6,10 @@ As the whitepaper already states the AElf kernel will be built in a similar way 
 
 * [Data Structures](#1data-structures)
 * [Components](#2components)
+* [AElf Topology](#3aelf-topology)
 
 ## Data Structures
 
 ## Components
+
+## AElf topology 
