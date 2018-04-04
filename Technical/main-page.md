@@ -43,18 +43,17 @@ This section describes the components implemented in the kernel. It clarifies th
 - `ChainContextService` provides functionality caching `ChainContext` objects in memory. 
     - Return `ChainContext` object in memory if cached
     - Return `ChainContext` object new created with `SmartContractZero` if not cached
-- `BlockValidatingService` maintains `BlockValidationFilter` collection and provides entry of blocks validation
+- `BlockValidatingService` maintains `BlockValidationFilter` collection and provides entry of blocks validation.
 - `SmartContractService` provides functionality for obtaining `SmartContract`
 
 ### **Manager**
-
 - `BlockManager` provides entries(get/set) for `BlockStore`
 - `ChainManager` provides functionality of appending the given Block to specified Chain and entries for `ChainBlockRelationStrore`
 - `ChainManager` provides entries(get/set）for `ChainStore`
 - `SmartContractManager` provides entries(get/set）for `SmartContractRegistration` storage
 - `TransactionManager` provides entries for `TransactionSotre`
 - `TransactionExecutingManager` contains scheduling algorithm and provides functionality of `Transaction` executing
-- `WorldStateManager` provides entry for `WoldStatestore` and functionality to obtain `AccountDataProvider` objects associated with given `Account`
+- `WorldStateManager` provides entry for `WoldStateStore` and functionality to obtain `AccountDataProvider` objects associated with given `Account`
 
 ### **Storage**
 | Storage | Description |
@@ -64,15 +63,44 @@ This section describes the components implemented in the kernel. It clarifies th
 | `ChangesStore` | Insert and get a change of `path-pointer` |
 | `PointerStore` | Insert and get `pointer` (by path) |
 | `TransactionStore` | Insert and get `Transaction` |
-| `WorldStateStore` | Set and get `World State` of each `Block` |
+| `WorldStateStore` | Insert and get `World State` of each `Block` |
 | `ChainBlockRelationStore` | Insert and get `chain-block` relations by `Hash` |
 
  
 
 ### **Relation among Service, Manager, Storage**
-- **Service** is processing logic associated with chain state
-- **Manager** provides functionalities having nothing to do with chain state
-- **Storage** provides storage access and persistence without logic
+- **Service** is processing logic associated with chain state.
+- **Manager** provides functionalities having nothing to do with chain state.
+- **Storage** provides storage access and persistence without logic.
+
+
+  ```
+  +-----+----+    +---+----+    +-------+
+  |          | - |        |--> |       |
+  | Serrvice |   | Manager|
+  |          |   |        |    |       |
+  +----------+    +---+----+    +-------+
+      :                         ^
+      |       Lots of work      |
+      +-------------------------+
+  ```
+
+```mermaid
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+```
 
 ## AElf topology 
 
