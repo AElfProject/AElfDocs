@@ -6,10 +6,12 @@ As the whitepaper already states the AElf kernel will be built in a similar way 
 
 * [Data Structures](#1data-structures)
 * [Components](#2components)
+* [AElf Topology](#3aelf-topology)
 
 ## Data Structures
 
 ## Components
+
 
 This section describes the components implemented in the kernel. It clarifies the roles that they have in the system.
 
@@ -70,3 +72,7 @@ This section describes the components implemented in the kernel. It clarifies th
 - **Service** is processing logic associated with chain state
 - **Manager** provides functionalities having nothing to do with chain state
 - **Storage** provides storage access and persistence without logic
+
+## AElf topology 
+
+![Two clusters running AElf](figures/aelf-cluster-diagram.png)
