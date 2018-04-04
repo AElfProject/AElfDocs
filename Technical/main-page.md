@@ -13,3 +13,5 @@ As the whitepaper already states the AElf kernel will be built in a similar way 
 ## Components
 
 ## AElf topology 
+
+![Two clusters running AElf](figures/aelf-cluster-diagram.png)
