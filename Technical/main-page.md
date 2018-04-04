@@ -57,7 +57,7 @@ This section describes the components implemented in the kernel. It clarifies th
 - `WorldStateManager` provides entry for `WoldStatestore` and functionality to obtain `AccountDataProvider` objects associated with given `Account`
 
 ### **Storage**
-| Command | Description |
+| Storage | Description |
 | --- | --- |
 | `BlockStore` | Insert and get `BLock` |
 | `ChainStore` | Insert, update and get `Chain` |
